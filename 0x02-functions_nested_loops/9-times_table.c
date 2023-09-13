@@ -3,11 +3,11 @@
 
 /**
 
- * times_table - Prints the 9 times table
+ * times_table - check description
 
- *
+ * Description: It prints 9 times table starting with 0
 
- * Return: no return
+ * Return: Nothing.
 
  */
 
@@ -15,33 +15,38 @@ void times_table(void)
 
 {
 
-        int a, b, op;
+        int i, j, n;
 
 
-        for (a = 0; a <= 9; a++)
+        for (i = 0; i <= 9; i++)
 
         {
 
-
-                _putchar(48);
-
-                for (b = 1; b <= 9; b++)
+                for (j = 0; j <= 9; j++)
 
                 {
 
-                        op = a * b;
+                        n = i * j;
 
-                        _putchar(44);
 
-                        _putchar(32);
-
-                        if (op <= 9)
+                        if ((n / 10) == 0)
 
                         {
 
-                                _putchar(32);
+                                if (j != 0)
 
-                                _putchar(op + 48);
+                                        _putchar(' ');
+
+                                _putchar(n + '0');
+
+
+                                if (j == 9)
+
+                                        continue;
+
+                                _putchar(',');
+
+                                _putchar(' ');
 
                         }
 
@@ -49,9 +54,17 @@ void times_table(void)
 
                         {
 
-                                _putchar((op / 10) + 48);
+                                _putchar((n / 10) + '0');
 
-                                _putchar((op % 10) + 48);
+                                _putchar((n % 10) + '0');
+
+                                if (j == 9)
+
+                                        continue;
+
+                                _putchar(',');
+
+                                _putchar(' ');
 
                         }
 
