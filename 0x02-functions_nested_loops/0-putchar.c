@@ -1,7 +1,17 @@
 #include <stdio.h>
+#include <stdlib.h>
+#include <time.h>
+/**
+ * main - Entry point
+ *
+ * Return: Always 0 (success)
+ */
 
-int main(void) {
-    printf("_putchar\n");  // Print "_putchar" and then go to the next line
-    return 0;  // Indicate the program finished without any issues
+int main(void)
+{
+
+printf("_putchar\n");
+
+return (0);
 }
 
