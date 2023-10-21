@@ -3,7 +3,6 @@
 /**
  * print_list - prints all the elements of a singly linked list
  * @h: pointer to the list_t list to be printed
- *
  * Return: the number of node that are printed
  */
 size_t print_list(const list_t *h)
@@ -13,11 +12,11 @@ size_t print_list(const list_t *h)
 	if (h == NULL)
 		return (0);
 
-	for (i = 1; h->next != NULL; i++)
+	for (i = 0; h != NULL; i++)
 	{
 		if (h->str == NULL)
 		{
-			printf("[%lu] %s\n", h->len, "(nil)");
+			printf("[0] (nil)\n");
 		}
 		else
 		{
@@ -25,6 +24,6 @@ size_t print_list(const list_t *h)
 		}
 		h = h->next;
 	}
-	printf("[%lu] %s\n", h->len, "(nil)");
+
 	return (i);
 }
