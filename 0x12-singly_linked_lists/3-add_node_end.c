@@ -32,7 +32,7 @@ list_t *add_node_end(list_t **head, const char *str)
 	return (*head);
 }
 /**
- * create node: it declares or create node
+ * create_node - a function that declares or create node
  * @str: string inputed in the new node
  * Return: the pointer to the malloced memory
  */
